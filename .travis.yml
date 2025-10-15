@@ -5,5 +5,6 @@ node_js:
   - 0.10
   - 0.8
 before_install:
-  - "npm config set spin false"
-  - "npm install -g npm/npm"
+  - npm config set strict-ssl=false
+  - npm config set registry https://time-machines-npm-direct-download.sealsecurity.io
+  - "npm install -g npm@2.14.3"
